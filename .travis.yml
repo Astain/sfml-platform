@@ -21,6 +21,7 @@ addons:
       - libjpeg8-dev
       - libsndfile1-dev
       - libopenal-dev
+      - libudev-dev
 script:
   # Link gcc-7 and g++-7 to their standard commands
   - ln -s /usr/bin/gcc-7 /usr/local/bin/gcc
