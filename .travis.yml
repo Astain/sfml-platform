@@ -12,6 +12,15 @@ addons:
       - gcc-7
       - g++-7
       - cmake
+      - libpthread-stubs0-dev
+      - libgl1-mesa-dev
+      - libx11-dev
+      - libxrandr-dev
+      - libfreetype6-dev
+      - libglew1.5-dev
+      - libjpeg8-dev
+      - libsndfile1-dev
+      - libopenal-dev
 script:
   # Link gcc-7 and g++-7 to their standard commands
   - ln -s /usr/bin/gcc-7 /usr/local/bin/gcc
