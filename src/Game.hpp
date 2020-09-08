@@ -1,6 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "Player.hpp"
+#include "EntityManager.hpp"
 
 class Game
 {
@@ -19,5 +19,5 @@ private:
 
     //Variables
     sf::RenderWindow* m_window;
-    Player m_player;
+    EntityManager* m_entityManager;
 };

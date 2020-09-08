@@ -3,6 +3,7 @@
 Game::Game()
 {
     m_window = new sf::RenderWindow(sf::VideoMode(200, 200), "Platform_Game");
+    m_entityManager = EntityManager::getInstance();
 }
 
 Game::~Game()
@@ -38,13 +39,15 @@ void Game::updateDt()
 
 void Game::update()
 {
-    m_player.update();
+    m_entityManager->update();
 }
 
 void Game::render()
 {
     m_window->clear();
-    m_player.render(m_window);
+
+    m_entityManager->render(m_window);
+
     //Draw
     m_window->display();
 }

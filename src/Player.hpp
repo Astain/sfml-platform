@@ -1,14 +1,14 @@
 #pragma once
-#include <SFML/Graphics.hpp>
+#include "Entity.hpp"
 
-class Player
+class Player : public Entity
 {
 public:
     
     Player();
+    void update() override;
+    void draw(sf::RenderWindow* target) override;
 
-    void render(sf::RenderWindow* target);
-    void update();
 private:
     sf::CircleShape m_circleShape;
 };

@@ -8,9 +8,9 @@ m_circleShape(100.0f)
 
 void Player::update()
 {
-    
+
 }
-void Player::render(sf::RenderWindow* target)
+void Player::draw(sf::RenderWindow* target)
 {
     target->draw(m_circleShape);
 }
