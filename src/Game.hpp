@@ -1,5 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
+#include "Player.hpp"
 
 class Game
 {
@@ -18,4 +19,5 @@ private:
 
     //Variables
     sf::RenderWindow* m_window;
+    Player m_player;
 };

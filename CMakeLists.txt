@@ -4,6 +4,8 @@ project("sfml-platform")
 
 set(SOURCE_FILES
         src/main.cpp
+        src/Game.cpp
+        src/Player.cpp
 )
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
