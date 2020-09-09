@@ -1,16 +1,7 @@
 #include "Player.hpp"
+#include "Components/SpriteComponent.hpp"
 
-Player::Player():
-m_circleShape(100.0f)
+Player::Player()
 {
-    m_circleShape.setFillColor(sf::Color::Green);
-}
-
-void Player::update()
-{
-
-}
-void Player::draw(sf::RenderWindow* target)
-{
-    target->draw(m_circleShape);
+    addComponent<Component::SpriteComponent>();
 }
